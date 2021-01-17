@@ -123,6 +123,10 @@ p {
 }
 
 @media (min-width: 950px) {
+    .hero-area {
+        padding-top: 10px;    
+    }
+    
     .hero-area p {
         padding: 10px 17% 0 17%;
     }
