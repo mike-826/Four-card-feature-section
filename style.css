@@ -1,0 +1,148 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.3rem;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 98%)
+}
+
+.container {
+    padding: 10%;
+}
+
+h2, h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+.light-weight {
+    font-weight: 200;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    padding-top: 10px;
+}
+
+.hero-area {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.card {
+    border: 1px rgb(216, 216, 216) solid;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    height: 12.5rem;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    box-shadow: 0px 10px 5px 0px rgba(124, 124, 124, 0.75);
+-webkit-box-shadow: 0px 5px 10px 0px rgba(124, 124, 124 ,0.75);
+-moz-box-shadow: 0px 10px 5px 0px rgba(124, 124, 124, 0.75);
+}
+
+.card p {
+    font-weight: 200;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.card img {
+    height: 50px;
+    position: absolute;
+    left: 70%;
+    bottom: 10%;
+}
+
+.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-top: 5px solid hsl(0, 78%, 62%)
+}
+
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%)
+}
+
+.calculator {
+    border-top: 5px solid hsl(212, 86%, 64%)  
+}
+
+@media (min-width: 300px) {
+    .card img {
+        left: 75%;
+    }
+}
+
+@media (min-width: 400px) {
+    .card img {
+        left: 80%;
+    }
+}
+
+@media (min-width: 525px) {
+    .hero-area p {
+        padding: 10px 10% 0 10%;
+    }
+
+    .container {
+        padding: 5%
+    }
+
+    .content {
+        height: 31.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 45%;
+        height: 14rem;
+        margin-bottom: 1.875;
+    }
+
+    .card img {
+        left: 70%;
+    }
+}
+
+@media (min-width: 950px) {
+    .hero-area p {
+        padding: 10px 17% 0 17%;
+    }
+
+    .content {
+        margin-top: 4.6875rem;
+        height: 31.25rem;
+        display: flex;
+    }
+
+    .card {
+        width: 30%;
+        margin-bottom: 25px;
+    }
+
+    .supervisor, .calculator {
+        top: 120px;
+    }
+
+    .karma {
+        order: 1;
+    }
+}
